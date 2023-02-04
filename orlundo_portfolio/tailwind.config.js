@@ -5,7 +5,12 @@ module.exports = {
 ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        burtons: "burtons",
+        roboto: 'Roboto'
+      }
+    },
   },
   plugins: [],
 }
