@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai";
+import Image from "next/image";
+import orlundo from "../public/new_orlundo.png";
 export default function Home() {
   return (
     <div>
@@ -24,9 +26,24 @@ export default function Home() {
           </li>
         </ul>
         </nav>
+        <div className="text-center p-10">
+          <h2 className="text-5xl py-2 text-teal-600 font-medium">Orlundo Hubbard</h2>
+          <h3 className="text-2xl py-2">Software Engineer</h3>
+          <p className="text-md py-5 leading-8 text-gray-800">I'm a software engineer based out of Austin, Texas with experience in building production ready projects. I've worked with technologies such as JavaScript (React, NextJs), SQL, and Python. I also have a strong background in working with team collaboration tools such as Figma, Jira and Github. </p>
+        </div>
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+          <AiFillTwitterCircle />
+          <AiFillLinkedin />
+          <AiFillYoutube />
+        </div>
+        <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 height-80 mt-20 overflow-hidden">
+          <Image src={orlundo} />
+        </div>
+      </section>
+      <section>
         <div>
-          <h2>Orlundo Hubbard</h2>
-          <h3>Software Engineer</h3>
+          <h3 className="text-3xl py-1">Services I offer</h3>
+          <p>I am an engineer and freelancer looking to help artist build out their portfolio</p>
         </div>
       </section>
     </main>
