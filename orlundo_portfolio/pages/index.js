@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai";
 import Image from "next/image";
 import orlundo from "../public/new_orlundo.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 export default function Home() {
   return (
     <div>
@@ -43,7 +46,16 @@ export default function Home() {
       <section>
         <div>
           <h3 className="text-3xl py-1">Services I offer</h3>
-          <p>I am an engineer and freelancer looking to help artist build out their portfolio</p>
+          <p className="text-md py-2 leading-8 text-gray-800">I am an engineer and freelancer looking to help artist build out their portfolio. I've built projects for 
+           <span className="text-teal-500"> startups</span> in an agency setting and I'm very comfortable in working in fast pace environments that require a lot of change.
+          </p>
+        </div>
+        <div>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <Image src={design} width={100} height={100} />
+            <h3 text-lg font-medium pt-8 pb-2>Beautiful designs</h3>
+            <p className="py-2">Creating beautiful designs using modern design theory</p>
+          </div>
         </div>
       </section>
     </main>
